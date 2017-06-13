@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libredis - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/libredis.res" /d "NDEBUG" "C:\Users\Administrator\Desktop\libredis\libredis\libredis.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPDB6D.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /FR"Release/" /Fp"Release/libredis.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Administrator\Desktop\libredis\libredis\Redis.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPDB6D.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPDB6E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/libredis.pdb" /debug /machine:I386 /def:".\libredis.def" /out:"../sample/Release/libredis.dll" /implib:"Release/libredis.lib" /pdbtype:sept 
+.\Release\Redis.obj
+.\Release\libredis.res
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPDB6E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Redis.cpp
+C:\Users\Administrator\Desktop\libredis\libredis\Redis.cpp(328) : warning C4018: '==' : signed/unsigned mismatch
+C:\Users\Administrator\Desktop\libredis\libredis\Redis.cpp(358) : warning C4018: '==' : signed/unsigned mismatch
+Linking...
+   Creating library Release/libredis.lib and object Release/libredis.exp
+<h3>
+--------------------Configuration: redis_client - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPE177.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/redis_client.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Administrator\Desktop\libredis\sample\redis_client.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPE177.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPE178.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib libredis.lib /nologo /subsystem:console /incremental:no /pdb:"Release/redis_client.pdb" /machine:I386 /out:"Release/redis_client.exe" 
+.\Release\redis_client.obj
+\Users\Administrator\Desktop\libredis\libredis\Release\libredis.lib
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPE178.tmp"
+<h3>Output Window</h3>
+Compiling...
+redis_client.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+redis_client.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

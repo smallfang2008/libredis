@@ -1,0 +1,96 @@
+LIBRARY		libredis
+
+DESCRIPTION		'libredis.dll'
+
+EXPORTS
+	cr_new						@1
+	writev						@2
+	credis_auth				@3
+	credis_bgsave				@4
+	credis_close					@5
+	credis_connect					@6
+	credis_dbsize					@7
+	credis_decrby					@8
+	credis_decr					@9
+	credis_del					@10
+	credis_exists					@11
+	credis_expire					@12
+
+	credis_flushall				@13
+	credis_flushdb				@14
+	credis_get				@15
+	credis_getset				@16
+	credis_incr			@17
+	credis_incrby				@18
+	credis_info					@19
+	credis_keys				@20
+	credis_lastsave				@21
+
+	credis_lindex			@22
+	credis_llen					@23
+	credis_lpop		@24	
+	credis_lpush				@25
+	credis_lrange				@26
+	credis_lrem					@27
+	credis_lset					@28
+	credis_ltrim				@29
+	credis_mget					@30
+
+    ;  REMARK :
+	;												   
+	; version 2.1 or later. mtcp2 export			   
+	; addrbook function and message queue function.	   
+	;												   
+	; stack:										   	
+	;    start at: @31								   
+	;    end at : @50								   
+	;												   	
+
+	credis_monitor						@31
+
+	credis_move				@32
+	credis_ping				@33
+	credis_randomkey					@34
+
+	credis_rename					@35
+	credis_renamenx					@36
+	credis_rpop						@37
+	credis_rpush					@38
+	credis_sadd						@39
+	credis_save						@40
+	credis_scard						@41
+	credis_sdiff					@42
+	credis_sdiffstore					@43
+	credis_select					@44
+	credis_set					@45
+	credis_setnx					@46
+	credis_shutdown				@47
+	credis_sinter				@48
+	credis_sinterstore					@49
+	credis_sismember					@50
+	credis_slaveof					@51
+	credis_smembers					@52
+
+	;  extened version.
+	;  2002/12/13 by wbc.
+	;  v2.23 
+
+	credis_smove				@53
+
+	;  extened version.
+	;  2003/11/18 by wuaxin.
+	;  v2.24 
+
+	credis_sort			@54
+
+
+	;  extened version.
+	;  2003/12/16 by wuaxin.
+	;  v2.25 
+
+	credis_spop				@55
+	credis_srem					@56
+	credis_sunion					@57
+	credis_sunionstore					@58
+	credis_ttl                               @59
+	credis_type                            @60
