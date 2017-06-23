@@ -70,24 +70,8 @@ EXPORTS
 	credis_sismember					@50
 	credis_slaveof					@51
 	credis_smembers					@52
-
-	;  extened version.
-	;  2002/12/13 by wbc.
-	;  v2.23 
-
 	credis_smove				@53
-
-	;  extened version.
-	;  2003/11/18 by wuaxin.
-	;  v2.24 
-
 	credis_sort			@54
-
-
-	;  extened version.
-	;  2003/12/16 by wuaxin.
-	;  v2.25 
-
 	credis_spop				@55
 	credis_srem					@56
 	credis_sunion					@57
